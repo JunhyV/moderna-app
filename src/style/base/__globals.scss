@@ -1,0 +1,24 @@
+@use '_variables' as v;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    background-color: v.$background;
+    height: 100vh;
+    width: 100vw;
+}
+h1, h2, h3, h4, p{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+    color: v.$blanco;
+    font-family: v.$titulo;
+}

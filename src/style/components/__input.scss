@@ -1,0 +1,20 @@
+@use '../base/_variables' as v;
+
+.form-field{
+    position: relative;
+
+    & p{
+        position: absolute;
+        top: 0.1;
+        left: 1rem;
+        color: v.$gris;
+        font-family: v.$opcion;
+        font-size: 1.2rem;
+    }
+    & input{
+        height: 4rem;
+        text-align: end;
+        font-family: v.$opcion;
+        font-size: 1.4rem;
+    }
+}

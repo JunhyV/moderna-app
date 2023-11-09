@@ -1,0 +1,38 @@
+@use '_variables' as v;
+
+/* Media Queries */
+@mixin telefono {
+    @media (min-width: v.$mobile) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+  
+@mixin desktop {
+    @media (min-width: v.$escritorio) {
+        @content;
+    }
+}
+
+/* Funciones */
+
+@mixin boton($color){
+    background-color: $color;
+    padding: 1rem;
+    text-decoration: none;
+    color: v.$blanco;
+    font-family: v.$opcion;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+
+    &:hover{
+        background-color: darken($color, 10);  
+    }
+}
