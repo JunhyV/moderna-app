@@ -9,12 +9,13 @@
         left: 1rem;
         color: v.$gris;
         font-family: v.$opcion;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     & input{
-        height: 4rem;
+        height: 5rem;
+        width: 25rem;
         text-align: end;
         font-family: v.$opcion;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 }
