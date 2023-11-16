@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/style/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Kay+Pho+Du:wght@400;700&family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <title>ModernaApp</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__user">
+        <img src="../src/img/usuario-base.png" alt="user-img" />
+        <h2 class="flex--column">
+          <span class="user__span">Bienvenido:</span> User Name
+        </h2>
+      </div>
+      <nav class="header__nav">
+        <a href="admin.html">Principal</a>
+        <a href="nuevo.html">Nuevo</a>
+        <a href="pedidos.html">Pedidos</a>
+        <a href="productos.html">Productos</a>
+        <a href="cerrar-session.html">Cerrar Sesión</a>
+      </nav>
+      <!-- Barra de navegación -->
+    </header>
+    <!-- Header -->
+    <main class="contenido">
+      <div class="contenido__principal">
+        <h2>Vista General</h2>
+        <div class="contenido__vista">
+          <div class="contenido__card flex--column">
+            <h3>Próximo Evento</h3>
+            <img src="../src/img/rosca.jpg" alt="rosca-img" />
+            <p>Rosca de reyes</p>
+          </div>
+          <div class="contenido__card">
+            <h3>No. de pedidos</h3>
+            <p>7</p>
+          </div>
+          <div class="contenido__card">
+            <h3>Pedidos</h3>
+            <p>09|12|2023</p>
+            <p>4</p>
+          </div>
+        </div>
+      </div>
+      <div class="contenido__principal">
+        <h2>Pedidos recientes</h2>
+        <div class="contenido__tabla">
+          <table>
+            <tr class="tabla__opciones">
+              <th>Folio</th>
+              <th>Nombre</th>
+              <th>Productos</th>
+              <th>Status</th>
+              <th>Opciones</th>
+            </tr>
+            <!-- opciones -->
+            <tr>
+              <td>2023000</td>
+              <td>Jonathan Salazar</td>
+              <td>
+                <li>Rosca de reyes Mediana</li>
+              </td>
+              <td class="boton--verde">Pagado</td>
+              <td>
+                <button class="boton--azul">
+                  <img width='30' src="../src/img/edit.svg" alt="edit">
+                </button>
+                <button class="boton--rojo">
+                  <img width="30" src="../src/img/delete.svg" alt="delete">
+                </button>
+              </td>
+            </tr>
+            <!-- dato 1 -->
+            <tr>
+              <td>2023000</td>
+              <td>Xochitl Claustro</td>
+              <td>
+                <li>Rosca de reyes Chica</li>
+              </td>
+              <td class="boton--amarillo">Apartado</td>
+              <td>
+                <button class="boton--azul">
+                  <img width='30' src="../src/img/edit.svg" alt="edit">
+                </button>
+                <button class="boton--rojo">
+                  <img width="30" src="../src/img/delete.svg" alt="delete">
+                </button>
+              </td>
+            </tr>
+            <!-- dato 2 -->
+            <tr>
+              <td>2023000</td>
+              <td>Jonathan Salazar</td>
+              <td>
+                <li>Rosca de reyes Mediana</li>
+              </td>
+              <td class="boton--verde">Pagado</td>
+              <td>
+                <button class="boton--azul">
+                  <img width='30' src="../src/img/edit.svg" alt="edit">
+                </button>
+                <button class="boton--rojo">
+                  <img width="30" src="../src/img/delete.svg" alt="delete">
+                </button>
+              </td>
+            </tr>
+            <!-- dato 3 -->
+            <tr>
+              <td>2023000</td>
+              <td>Xochitl Claustro</td>
+              <td>
+                <li>Rosca de reyes Chica</li>
+              </td>
+              <td class="boton--amarillo">Apartado</td>
+              <td>
+                <button class="boton--azul">
+                  <img width='30' src="../src/img/edit.svg" alt="edit">
+                </button>
+                <button class="boton--rojo">
+                  <img width="30" src="../src/img/delete.svg" alt="delete">
+                </button>
+              </td>
+            </tr>
+            <!-- dato 4 -->
+          </table>
+        </div>
+      </div>
+    </main>
+    <script src="src/app.js"></script>
+  </body>
+</html>

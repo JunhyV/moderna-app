@@ -1,0 +1,62 @@
+@use '../base/variables' as v;
+
+.contenido{
+    padding: 1rem;
+    &__principal{
+        & h2{
+            text-align: start;
+        }
+        & h1, h2, h3, h4, p {
+            color: v.$negro;
+        }
+    }
+    &__vista{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        justify-items: center;
+        margin-bottom: 2rem;
+    }
+    &__card{
+        width: 25rem;
+        padding: 1rem;
+        background-color: v.$blanco;
+        border-radius: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        transition: transform 0.8s;
+
+        & p{
+            font-family: v.$opcion;
+        }
+        &:hover{
+            transform: scale(1.1);
+        }
+
+        & img{
+            width: 20rem;
+            justify-self: center;
+        }
+    }
+
+    &__tabla{
+        width: 100%;
+        overflow-x: scroll;
+        & table{
+            width: 70rem;
+            font-family: v.$dato;
+
+            & th, td{
+                text-align: center;
+                list-style: none;
+            }
+
+            & li{
+                margin-left: -2rem;
+            }
+        }
+    }
+}
+
+.tabla__opciones{
+    border: 1px solid black;
+}

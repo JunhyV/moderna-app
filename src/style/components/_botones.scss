@@ -1,0 +1,39 @@
+@use '../base/_mixins' as m;
+@use '../base/_variables' as v;
+
+.link__boton--azul{
+    @include m.boton($azul);
+}
+
+.boton-regreso{
+    text-decoration: none;
+    color: v.$blanco;
+    font-family: v.$dato;
+    position: absolute;
+    font-size:5rem;
+    top: -1rem;
+    left: 2.5rem;
+
+    &:hover{
+        color: v.$azul;
+    }
+}
+
+.boton--azul{
+    @include m.boton(v.$azul);
+    cursor: pointer;
+}
+.boton--rojo{
+    @include m.boton(v.$rojo);
+    cursor: pointer;
+}
+.boton--verde{
+    background-color: lighten(v.$verde, $amount: 40) ;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+.boton--amarillo{
+    background-color: lighten(v.$amarillo, $amount: 15) ;
+    border-radius: 2rem;
+    font-weight: bold;
+}

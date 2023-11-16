@@ -1,14 +1,16 @@
 /* Base */
-@import 'base/_globals';
-@import 'base/_mixins';
-@import 'base/_normalizer';
-@import 'base/_variables';
-@import 'base/_utils';
+@import 'base/globals';
+@import 'base/mixins';
+@import 'base/normalizer';
+@import 'base/variables';
+@import 'base/utils';
 
 /* Componentes */
-@import 'components/_botones';
-@import 'components/_contenedor';
-@import 'components/_input';
+@import 'components/botones';
+@import 'components/contenedor';
+@import 'components/input';
+@import 'components/header';
+@import 'components/contenido';
 
 /* Layout */
 /* Pages */

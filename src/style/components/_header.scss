@@ -1,0 +1,44 @@
+@use '../base/variables' as v;
+
+.header{
+    padding: 1rem;
+    background-color: v.$cafeOscuro;
+
+    &__user{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        & img{
+            width: 8rem;
+            background-color: v.$background;
+            border-radius: 50%;
+        }
+
+        & h2{
+            gap: 0;
+            
+            & span{
+                font-size: 1rem;
+            }
+        }
+    }
+    &__nav{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+
+        & a{
+            text-decoration: none;
+            color: v.$blanco;
+            font-family: v.$opcion;
+            font-weight: bold;
+            padding: 0.3rem 0.5rem;
+            border-radius: 2rem;
+
+            &:hover{
+                background-color: darken(v.$cafeOscuro, 10);
+            }
+        }
+    }
+}
